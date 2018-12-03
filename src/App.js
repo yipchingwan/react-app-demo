@@ -3,13 +3,19 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  state = {number:0}
+  update = ()=>{
+    this.setState({number:1});
+  }  
   render() {
+    
     return (
 
           <div>
-            <button onClick={()=>alert('now you know how to handle onclick event')}>Hello World!</button>
-            name:0
+            <button onClick={this.update}>Hello World!</button>
+            name:{this.state.number}
           </div>
+  
             
 
     );
@@ -17,3 +23,6 @@ class App extends Component {
 }
 
 export default App;
+
+
+
