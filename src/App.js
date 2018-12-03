@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import number from './component/number.js'
 
 class App extends Component {
   state = {number:0}
