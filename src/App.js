@@ -13,9 +13,9 @@ class App extends Component {
 
           <div>
             <button onClick={this.update}>Hello World!</button>
-            name:{this.state.number}
+            name:{this.props.defaultNumber}
           </div>
-  
+        
             
 
     );
