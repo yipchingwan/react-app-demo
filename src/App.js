@@ -5,15 +5,15 @@ import './App.css';
 class App extends Component {
   state = {number:0}
   update = ()=>{
-    this.setState({number:1});
-  }  
+    this.setState({number:this.props.defaultFunction(this.state.number)});
+  }
   render() {
     
     return (
 
           <div>
             <button onClick={this.update}>Hello World!</button>
-            name:{this.props.defaultNumber}
+            name:{this.state.number}
           </div>
         
             
