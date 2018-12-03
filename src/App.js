@@ -7,7 +7,7 @@ class App extends Component {
     return (
 
           <div>
-            <button>Hello World!</button>
+            <button onClick={()=>alert('now you know how to handle onclick event')}>Hello World!</button>
             name:0
           </div>
             
